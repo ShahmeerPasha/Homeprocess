@@ -1,70 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        input[type="text"],
-        input[type="password"],
-        input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        input[type="submit"] {
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiran</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
 </head>
 <body>
-    <form id="loginForm" action="home.html" method="post" onsubmit="return validateLogin()">
-        <h2>Login</h2>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <input type="submit" value="Login">
-    </form>
-
-    <script>
-        function validateLogin() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-
-            if (username === "Test" && password === "Test") {
-                return true; // Proceed to home.html
-            } else {
-                alert("Incorrect username or password");
-                return false; // Prevent form submission
-            }
-        }
-    </script>
+  <h1>Kiran</h1>
+  <table>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Kiran</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Occupation</td>
+      <td>Social Marketing Manager</td>
+    </tr>
+    <tr>
+      <td>Income Level</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>Dubai, UAE</td>
+    </tr>
+    <tr>
+      <td>Marital Status</td>
+      <td>Single</td>
+    </tr>
+    <tr>
+      <td>Goals</td>
+      <td>
+        <ul>
+          <li>Making the charitable contributions regularly that would help in supporting the social causes</li>
+          <li>Always look for shopping reputable brands.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Pain Points</td>
+      <td>
+        <ul>
+          <li>Limited time</li>
+          <li>Demanding job</li>
+          <li>Family responsibilities</li>
+          <li>Transparency of donations</li>
+          <li>Impact on social causes</li>
+          <li>Convenient contribution</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Interests/Hobbies</td>
+      <td>
+        <ul>
+          <li>Following social media influencers for fashion and lifestyle trends.</li>
+          <li>Attending networking events and workshops related to marketing and entrepreneurship.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Preferred Communication Channels</td>
+      <td>
+        <ul>
+          <li>Social media platforms such as Instagram and LinkedIn for updates and promotions.</li>
+          <li>Email for Office User only</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Tech Savvy Level</td>
+      <td>Moderate</td>
+    </tr>
+  </table>
 </body>
 </html>
